@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans",
+  sans-serif; 
+  font-size: 20px;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+nav,
+footer {
+  padding: 1% 0;
+  background-color: #aaa;
+  align-items:right;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+header {
+  padding: 12% 0;
+  background-image: url(portfolio-images/cyberpunk22.gif);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+h1{
+  color: whitesmoke;
+  align-content: center;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  display: inline;
+  float: right;
+  padding: 8px;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #bbb;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+p{
+  
+}
+
+/* Media Query Stuff */
+
+@media screen and (max-width: 375px) {
+  #nav, li{
+    padding: 4;
+    font-size: 12px;
+  }
+
+  #header, h1{
+    font-size: 20px;
+  }

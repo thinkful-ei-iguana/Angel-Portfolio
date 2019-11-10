@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>Angel Alicea III's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://kit.fontawesome.com/eefca83f05.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
  
 </head>
 <body>
-    <nav role="navigation">
+    <nav class ="navbar" role="navigation">
+      <img class = "logo" src="portfolio-images/logo3.png">
       <ul>
-        <li>Projects</li>
-        <li>LinkedIn</li>
-        <li>GitHub</li>
-        <li>Contact Me</li>
+        <li><a href = "#projects">Projects</a></li>
+        <li><a href = "https://www.linkedin.com/in/angel-alicea-iii/">LinkedIn</a></li>
+        <li><a href  = "https://github.com/aliceaa396">GitHub</a></li>
+        <li><a href ="#contact">Contact Me</a></li>
       </ul>
     </nav>
+  
     <main role="main">
         <header role="banner">
-            <h1>Angel Alicea's Portfolio</h1>
+            <h1>Hi, I'm Angel Alicea and I'm a Full-Stack Software Engineer.</h1>
+            <button class = "link"><a href = "#projects">Check Out My Projects!</a></button>
         </header>
 
         <section id="aboutMe">
-          <h3> About Me</h3>
+          <h2> About Me</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </section>
 
         <section id="experience">
-          <h3> My Experience </h3>
-          <p> HTML<i class="fab fa-html5"></i> </p>
-          <p> CSS<i class="fab fa-css3-alt"></i></p>
-          <p>Javascript <i class="fab fa-js"></i></p>
-          <p> Git <i class="fab fa-github-square"></i> </p>
-          <p>jQuery</p>
-          <p>Ruby</p>
+          <h2> My Experience </h2>
+          <div class ="languages">
+            <p> HTML<i class="fab fa-html5"></i> </p>
+            <p> CSS<i class="fab fa-css3-alt"></i></p>
+            <p>Javascript <i class="fab fa-js"></i></p>
+            <p> Git <i class="fab fa-github-square"></i> </p>
+            <p>jQuery</p>
+            <p>Ruby</p>
+          </div>
         </section>
+
+      
 
         <section id="projects">
-          <h3> My Projects </h3>
-          <img src="portfolio-images/matrixquizapp.gif"></br>
-          <a href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App"> My Quiz Application </a>
+          <h2> My Projects </h2>
+          <img id="quiz-app" class="quizApp" src="portfolio-images/matrixquizapp.gif"></br>
+          <a href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/"> Take the quiz!</a></br>
+          <a href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App"> GitHub Link</a>
+          <p> A simple quiz application created with Javascript and jQuery.</p>
         </section>
 
-        <section>
+        <section id="contact">
            <h3> Contact Me</h3>
            <p>Email:</p>
            <p>LinkedIn</p>
            <p>Github</p>
         </section>
         
-        <section>
-            Section 4
-        </section>
+        <!-- <section>
+            <h3> Contact Me </h3>
+            <form action ="/my-handling-form-page" method = "post">
+              <div>
+                <label for="name"> Name: </label>
+                <input type = "text" id="name" name="user_name">
+              </div>
+              <div>
+                <label for ="email"> Email: </label>
+                <input type = "email" id = "mail" name  = "user_email">
+              </div>
+              <div>
+                <label for = "msg">Message:</label>
+                <textarea id ="msg" name="user_msg"></textarea>
+              </div>
+              <button type = "submit"> Send Your Message</button>
+            </form>
+        </section> -->
     </main>
-    <footer role="content-info">Footer</footer>
+    <footer role="content-info">I love recieiving mail at <a href = "" ></a></footer>
 </body>
 </html>

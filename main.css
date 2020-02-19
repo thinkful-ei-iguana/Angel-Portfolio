@@ -99,6 +99,7 @@ section:nth-child(even) {
 
  img.quizApp {
   border: solid white;
+  margin: auto
 }
 
 img.logo{
@@ -116,9 +117,7 @@ form {
   border: 1px solid #CCC;
   border-radius: 1em;
 }
-.quizApp {
-  margin: auto;
-}
+
 
 form div + div {
   margin-top: 1em;
@@ -197,8 +196,8 @@ and (max-device-width : 568px) {
     width:50px;
     float: left;
   }
-  .quizApp {
-    margin: auto;
-
+  img.quizApp {
+    border: solid white;
+    margin: auto
   }
 }

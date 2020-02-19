@@ -170,7 +170,9 @@ button {
 
 /* Media Query Stuff */
 
-@media screen and (max-width: 375px) {
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
   #nav, li{
     padding: 4;
     font-size: 12px;
@@ -192,10 +194,7 @@ button {
     width:50px;
     float: left;
   }
-  /* form {
-    width: auto;
-    max-width: 50px;
-    height: auto;
-    max-height: 50px;
-  } */
+  .quizApp {
+    margin: auto;
+  }
 }

@@ -108,13 +108,16 @@ img.logo{
 }
 
 /* form stuff */
-form{
+form {
   margin: 0 auto;
   width: 400px;
   /* form outline */
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
+}
+.quizApp {
+  margin: auto;
 }
 
 form div + div {
@@ -196,6 +199,6 @@ and (max-device-width : 568px) {
   }
   .quizApp {
     margin: auto;
-    
+
   }
 }

@@ -184,13 +184,6 @@ and (max-device-width : 568px) {
     font-size: 20px;
   }
 
-   img {
-    width: auto;
-    max-width: 303px;
-    height: auto;
-    max-height: 300px;
-  }
-
   img.logo{
     height:auto;
     width:50px;

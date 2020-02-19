@@ -196,5 +196,6 @@ and (max-device-width : 568px) {
   }
   .quizApp {
     margin: auto;
+    
   }
 }

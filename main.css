@@ -395,6 +395,9 @@ footer {
     url(portfolio-images/cyberhero2.gif) center no-repeat;
   background-size: cover;
 }
+h3.contact-me-footer {
+  font-family: 'Nunito', sans-serif;
+}
 img.footer-logo {
   display: flex;
   justify-content: left;
@@ -542,5 +545,17 @@ and (max-device-width : 568px) {
 
   button {
     font-size: 15px;
+  }
+  .social-links {
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  .social-links i {
+    font-size: 40px;
+  }
+  h3.contact-me-footer {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
   }
 }

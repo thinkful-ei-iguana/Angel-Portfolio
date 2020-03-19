@@ -289,20 +289,22 @@ div.card {
  .cards-item {
    display: flex;
    padding: 1rem;
+   margin: 0 auto;
  }
 
- .project-card {
+ div.project-card {
    background-color: #fafafa;
    border-radius: 0.25rem;
    box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
    display: flex;
    flex-direction: column;
-   overflow: hidden;
+   justify-content: center;
+   margin: 0 auto;
+   /* overflow: hidden; */
  }
  
  .card-content {
    display: flex;
-   flex: 1 1 auto;
    flex-direction: column;
    padding: 1rem;
    width: 90%;
@@ -314,28 +316,25 @@ div.card {
    background-size: cover;
    border-top-left-radius: 0.25rem;
    border-top-right-radius: 0.25rem;
-   filter: contrast(70%);
    overflow: hidden;
    position: relative;
  }
 
  .card-title {
    color: black;
-   font-size: 1.25rem;
-   font-weight: 300;
    letter-spacing: 2px;
    text-transform: uppercase;
  }
 
  .card-text {
    flex: 1 1 auto;
-   font-size: 0.875rem;
+   margin: 0;
    line-height: 1.5;
    margin-bottom: 1.25rem;
  }
 
- .card__image--fitpad {
-   background-image: url('https://ibb.co/yp47DQg');
+ .card__image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
  }
 
 form div + div {

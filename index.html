@@ -5,80 +5,285 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eefca83f05.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
  
 </head>
+
 <body>
-    <nav class ="navbar" role="navigation">
-      <img class = "logo" src="portfolio-images/logo3.png">
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="https://www.linkedin.com/in/angel-alicea-iii/">LinkedIn</a></li>
-        <li><a href="https://github.com/aliceaa396">GitHub</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="container">
+      <nav>
+
+        <div class="navMenu">
+          <a href="index.html">
+              <img class="logo" src="portfolio-images/logo.png" alt="">
+          </a>
+        </div>
+
+        <div class="menu-icons open">
+          <i class="icon ion-md-menu"></i>
+        </div>
+
+        <ul class="nav-list">
+          <div class="menu-icons close">
+            <i class="icon ion-md-close"></i>
+          </div>
+
+          <li class="nav-item">
+            <a href="#projects" class="nav-link"> Projects </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.linkedin.com/in/angel-alicea-iii/" class="nav-link" target="_blank"> LinkedIn </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/aliceaa396" class="nav-link" target="_blank"> 
+              GitHub 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href = "mailto: ala31996@gmail.com"> Contact Me </a>
+          </li>
+          <li class="nav-item">
+            <a 
+              href = "https://docs.google.com/document/d/17F-g3AdyceOmDp5YTiVo0L0lCvoPHyLNX5JCXZbVyX0/edit?usp=sharing"
+              target="_blank"
+            > 
+              Resume 
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    
   
     <main role="main">
-        <header role="banner">
-            <h1>Hi I'm Angel Alicea, I'm a Full-Stack Software Engineer and Fitness Enthusiast!</h1>
-            <button class = "link"><a href = "#projects">Check Out My Projects</a></button>
-        </header>
-
-        <section id="aboutMe">
-          <h2> About Me</h2>
-          <p>My name is Angel Alicea III and I am a Full-Stack Software Engineer. Since I was a child I've had a passion for technology. Some of my earliest technological feats include jailbreaking my iPod touches and manipulating my Myspace profile themes to achieve the look I desired. Some of my favorite hobbies include going to the gym, going on hikes through beautiful trails in the Mercer County area, as well as teaching weight lifting fundamentals to new friends! In 2018 I graduated from Rider University with a degree in Criminal Justice and a concentration on Legal Studies. After realizing I wasn't passionate about law I embraced my love for technology and began to study HTML, CSS, and Ruby. </p>
-        </section>
-
-        <section id="experience">
-          <h2> My Experience </h2>
-          <div class ="languages">
-            <p> HTML<i class="fab fa-html5"></i> </p>
-            <p> CSS<i class="fab fa-css3-alt"></i></p>
-            <p>Javascript <i class="fab fa-js"></i></p>
-            <p> Git <i class="fab fa-github-square"></i> </p>
-            <p>jQuery</p>
-            <p>Ruby</p>
+        
+        <section class="hero">
+          <div class="container">
+            <div class="main-message">
+              <h2> Angel L. Alicea III </h2>
+              <h1> Full Stack Web Developer </h1>
+              <p class="short-summary">
+                Hi I'm Angel Alicea, I'm a Highly motivated Full-Stack Web Developer with a passion for UI and UX. I pride myself on my work ethic and willingness to do whatever is necessary to accomplish a goal I’ve set for myself. One of the most beautiful things about life is that every day is an opportunity to learn and take steps towards achieving your life long goals!
+              </p>
+              <div class="cta">
+                <a href="#projects" class="btn">See My Projects </a>
+              </div>
+            </div>
           </div>
         </section>
 
-      
+        <section id="aboutMe">
+          <div class="container">
+            <div class="about-me-section">
+              <h1> About Me </h1>
+                <blockquote>
+                  <h1 class="qoute"> 
+                    Hard work beats talent, when talent refuses to work hard... 
+                  </h1>
+                </blockquote>
+              
+              <p class="aboutMePara">
+                I'm a strong believer that you are in full control of your happiness and destiny. At the age of 16, I wanted to pursue Criminal Justice and attend Law school. I began taking college courses in high school and even started studying for my LSAT's as a freshman in college. After seeing my tenacity and desire to become an attorney I was offered an internship at two Law Offices. After completing my internships, I realized that I was only in love with certain aspects of the career and that pursuing law wouldn't allow me to have the work-life balance I desired. 
+              </p>
+              <p class="aboutMePara">
+                Upon receiving my undergraduate degree from Rider University, I began to pursue my Master's Degree in Homeland Security with hopes of becoming a Cyber Security Software Developer. While in my first semester of graduate school, I began self-teaching myself Ruby, Javascript, and HTML. That's when I fell in love with web development and decided to research software engineering boot camps. 
+              </p>
+              <p class="aboutMePara">
+                My favorite aspects of web and software development are the constant challenges they present. During my time at Thinkful, there was no lack of new challenges to be faced. Although stressful, I embraced the opportunities with joy because the sense of accomplishment I feel when finally getting a program to work as anticipated is unparalleled. What I may lack in years of experience, I more than makeup for with undying work ethic and tenacity to do my absolute best. As I continue through my career I hope to also start my own fitness coaching business to help others achieve their ideal physiques. 
+              </p>
+            </div>
+          </div>
+          
+        </section>
+
+        <section class="experience">
+          <h1 class="skills-title"> Technical Skills </h1>
+          <div class="skills-container">
+            
+            <div class ="card">
+              <h4 class="title"> Front-End</h4>
+                <div class="desc">
+                    <p> React </p> </br>
+                    <p> Vanilla JavaScript </p> </br>
+                    <p> HTML & CSS </p> </br>
+                    <p> jQuery </p> </br>
+                    <p> Redux </p> </br>
+                </div>
+            </div>
+  
+            <div class ="card">
+              <h4 class="title"> Back-End </h4>
+                <div class="desc">
+                  <p> Node </p> </br>
+                  <p> Express </p> </br>
+                  <p> PostgreSQL </p> </br>
+                  <p> JSON </p> </br>
+                  <p> RESTFUL API </p> </br>
+                </div>
+            </div>
+
+            <div class ="card"> 
+              <h4 class="title"> Dev. Tools </br> & Methods </h4>
+                <div class="desc">
+                    <p> Git </p>
+                    <p> GitHub </p>
+                    <p> Heroku </p>
+                    <p> Zeit </p>
+                    <p> Chrome Dev. Tools </p>
+                    <p> DBeaver </p>
+                    <p> Postman </p>
+                    <p> Mobile Development </p>
+                    <p> Responsive Design </p>
+                    <p> React MDL </p> 
+                    <p> WordPress </p>
+                </div>
+            </div>
+          </div>
+        </section>
 
         <section id="projects">
-          <h2> My Projects </h2>
-          <img class="quizApp" src="portfolio-images/matrixquizapp.gif"></br>
-          <a href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/"> Take the quiz!</a></br>
-          <a href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App"> GitHub Link</a>
-          <p> A simple quiz application created with Javascript and jQuery.</p>
-        </section>
 
-        <section id="contact">
-           <h3> Contact Me</h3>
-           <p><a href = "mailto: ala31996@gmail.com">Email</a></p>
-           <p><a href="https://www.linkedin.com/in/angel-alicea-iii/">LinkedIn</a></p>
-           <p><a href ="https://github.com/aliceaa396">Github</a></p>
-        </section>
-        
-        <!-- <section>
-            <h3> Contact Me </h3>
-            <form action ="/my-handling-form-page" method = "post">
-              <div>
-                <label for="name"> Name: </label>
-                <input type = "text" id="name" name="user_name">
+           <!-- Project 1 -->
+           <ul class="cards">
+            <li class="cards-item">
+              <div class="project-card">
+                <div class="card__image card__image--fitpad"></div>
+                <div class="card-content">
+                  <div class="card-title">
+                    Fitpad
+                  </div>
+                  <p class="card-text">
+                    Developed, tested and designed a Full-Stack application to effortlessly keep track of your weight lifting sessions. The technologies used to build this application include React, JSON, Node, PostgreSQL, Express, and CSS.
+                  </p>
+                  <button class="projects-btn">
+                    <a href="https://fitpad.now.sh/" target="_blank"> 
+                      Live Demo 
+                    </a>
+                  </button>
+                  <button class="projects-btn">
+                    <a href="https://gist.github.com/aliceaa396/8635a80457835309a1827c9fe8e9d46e#file-capstone-i-fitpad" target="_blank"> 
+                      GitHub 
+                    </a>
+                  </button>
+                </div>
               </div>
-              <div>
-                <label for ="email"> Email: </label>
-                <input type = "email" id = "mail" name  = "user_email">
+            </li>
+          </ul>
+
+          <!-- Project 2 -->
+          <ul class="cards">
+            <li class="cards-item">
+              <div class="project-card">
+                <div class="card-image spaced-reps"></div>
+                <div class="card-content">
+                  <div class="card-title">
+                    Spanish Spaced Repitition
+                  </div>
+                  <p class="card-text">
+                    Designed and developed a Full-Stack application that utilizes spaced repetition to teach users a new language. The technologies used to build this application include React, CSS, Node, as well as PostgreSQL.
+                  </p>
+                  <button class="projects-btn">
+                    <a href="https://spaced-repetition-ten.now.sh/" target="_blank"> 
+                      Live Demo 
+                    </a>
+                  </button>
+                  <button class="projects-btn">
+                    <a href="https://github.com/thinkful-ei-iguana/Jack-Angel-Capstone-II-Frontend" target="_blank">
+                      GitHub 
+                    </a>
+                  </button>
+                </div>
               </div>
-              <div>
-                <label for = "msg">Message:</label>
-                <textarea id ="msg" name="user_msg"></textarea>
+            </li>
+          </ul>
+
+          <!-- Project 3 -->
+          <ul class="cards">
+            <li class="cards-item">
+              <div class="project-card">
+                <div class="card-image frenmo"></div>
+                <div class="card-content">
+                  <div class="card-title">
+                    Frenmo
+                  </div>
+                  <p class="card-text">
+                    Acted a project manager on a team of five developers led by one senior developer. Contributed to the development of the front-end of the Full-Stack application that allows users to send virtual coupons to friends and family. The technologies used to build this application include React, CSS, Node, as well as PostgreSQL.
+                  </p>
+                  <button class="projects-btn">
+                    <a href="https://frenmo.now.sh/login" target="_blank">
+                      Live Demo 
+                    </a>
+                  </button>
+                  <button class="projects-btn">
+                    <a href="https://gist.github.com/aliceaa396/9bc42fbfbb49f381e0314b9e0a8df4fe" target="_blank">
+                      GitHub 
+                    </a>
+                  </button>
+                </div>
               </div>
-              <button type = "submit"> Send Your Message</button>
-            </form>
-        </section> -->
+            </li>
+          </ul>
+          
+          <!-- Project 4 -->
+          <ul class="cards">
+            <li class="cards-item">
+              <div class="project-card">
+                <div class="card-image sharkmarks"></div>
+                <div class="card-content">
+                  <div class="card-title">
+                    Sharkmarks
+                  </div>
+                  <p class="card-text">
+                    Designed and developed a bookmarking application that keeps track of your favorite websites.Tech:  jQuery, HTML, CSS, REST API.
+                  </p>
+                  <button class="projects-btn">
+                    <a href="https://thinkful-ei-iguana.github.io/Angel_Bookmarks_App/" target="_blank"> 
+                      Live Demo
+                    </a>
+                  </button>
+                  <button class="projects-btn">
+                    <a href="https://github.com/thinkful-ei-iguana/Angel_Bookmarks_App" target="_blank">
+                      GitHub
+                   </a>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Project 5 -->
+          <ul class="cards">
+            <li class="cards-item">
+              <div class="project-card">
+                <div class="card-image matrix"></div>
+                <div class="card-content">
+                  <div class="card-title">
+                    Matrix Quiz
+                  </div>
+                  <p class="card-text">
+                    Built a quiz application to test a user’s knowledge of the Matrix Films. Tech: jQuery, HTML, CSS, REST API.
+                  </p>
+                  <button class="projects-btn">
+                    <a href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/" target="_blank"> 
+                      Live Demo
+                    </a>
+                  </button>
+                  <button class="projects-btn">
+                    <a href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App" target="_blank"> 
+                      GitHub
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
     </main>
     <footer role="content-info"><a href = "mailto: ala31996@gmail.com"> Email Me! </footer>
+      <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

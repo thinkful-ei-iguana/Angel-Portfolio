@@ -1,17 +1,48 @@
+/* Global Styles */
 * {
-  box-sizing: border-box;
-  font-family: 'Maven Pro', sans-serif;
+  box-sizing: inherit;
 }
 
 body {
-  font-family: 'Maven Pro', sans-serif;
   font-size: 20px;
-  color: #444;
   text-align: center;
   line-height: 1.5;
 }
 
-nav,
+ul {
+  list-style: none;
+}
+
+html {
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box
+}
+/* 
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+} */
+a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+section {
+  min-height: 200px;
+  padding: 6% 0;
+  background-color: #fafafa;
+  border: solid gray;
+  color: white;
+}
+
+section:nth-child(even) {
+  background-color: #fafafa;
+  color:black;
+  border: solid black;
+}
+
 footer {
   padding: 1% 0;
   background-color: gray;
@@ -20,104 +51,292 @@ footer {
   border: solid black;
 }
 
-
-nav {
-  position: fixed;
+/* Nav Menu Styles */
+img.logo {
+  max-height: 50px;
+  font-size: 100px;
+  padding-top: 8px;
+}
+header { 
+  width: 100%;
+  height: 5rem;
+  position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.container {
+  width: 100%;
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.navMenu {
+  width: 2rem;
+}
+
+.menu-icons i {
+  font-size: 3.5rem;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.close i {
+  color: #fafafa;
+}
+
+.nav-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: #eb648c;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+  transition: all 650ms ease-in-out;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list.active {
   right: 0;
-  z-index: 10;
-  background-color: black;
-  padding: 0px;
-
 }
 
-header {
-  padding: 12% 0;
-  background-image: url(portfolio-images/cyberpunk22.gif);
-  background-repeat:no-repeat;
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.nav-item {
+  margin: 1.5rem 0;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fafafa
+}
+
+a.nav-link:hover {
+  color: rgba(102, 50, 145, 0.9);
+}
+/* Hero Styles */
+.hero {
+  background: 
+    linear-gradient(135deg, rgba(102, 50, 145, 0.9) 0%, rgba(72, 56, 149, 0.8) 100%), 
+    url(portfolio-images/cyberpunk22.gif) center no-repeat;
   background-size: cover;
-  background-position: center center;
-  background-blend-mode: darken;
-  background-color:dimgray;
-  border: solid black;
 }
 
-h1{
+.main-message {
+  width: 100%;
+  color: #fafafa;
+  text-transform: uppercase;
+}
+
+.main-message h1 {
+  font-family: 'Aldrich', sans-serif;
+}
+
+.main-message p {
   color: whitesmoke;
   align-content: center;
-  font-family: 'Maven Pro', sans-serif;
-  mix-blend-mode: unset ;
+  text-transform: lowercase;
+  text-align: justify;
+  text-indent: 2em;
+
 }
 
-button,.button {
-  background-color: black;
-  float: inline-start;
-  font-size: 20px;
-  padding: 15px 32px;
-  font-family:'Maven Pro', sans-serif;
+.main-message h3 {
+  font-size: 1.6rem;
 }
 
-button:hover{
-  color:white;
+.btn {
+  background-color: #eb648c;
+  color: #fafafa;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  transition: background-color 650ms;
 }
 
-a {
-  color:white;
-}
-a:hover{
-  color: violet;
+.btn:hover {
+  background-color: #ce587b;
 }
 
+/* About Me Styles */
+.about-me-section h1 {
+  font-family: 'Aldrich', sans-serif;
+}
 
-ul {
-  list-style: none;
+h1 .qoute  {
   margin: 0;
-  padding: 0;
+  font-family: 'Alderich', sans-serif;
+  text-align: right;
+  margin-top: 0px;
 }
 
-li{
+blockquote {
+  font-size: 25px;
+  background:transparent;
+  border-left: 5px solid black;
+  margin: .5em 10px;
+  padding: 0 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+  text-align: left;
+  
+}
+
+blockquote:before {
+  content: open-quote;
   display: inline;
-  float: right;
-  padding: 8px;
-  color: whitesmoke;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: black;
+  font-size:15rem;
+}
+.aboutMePara {
+  text-align: justify;
+  text-indent: 2em
+  ;
 }
 
-section {
-  min-height: 200px;
-  padding: 6% 0;
-  background-color: black;
-  border: solid gray;
-  color: white;
-}
 
-section:nth-child(even) {
-  background-color: gray;
-  color:white;
-  border: solid black;
+/* Skills Section  */
+section.experience {
+  background: 
+    linear-gradient(135deg, rgba(102, 50, 145, 0.9) 0%, rgba(72, 56, 149, 0.8) 100%), 
+    url(portfolio-images/cyberhero2.gif) center no-repeat;
+  background-size: cover;
+  justify-content: center;
 }
-
- img.quizApp {
-  border: solid white;
-  margin: auto;
+.skills-title {
+  color: #fafafa;
+  font-family: 'Aldrich', sans-serif;
 }
-
-img.logo{
-  height:auto;
-  width:100px;
-  float: left;
+h4.title {
+  font-family: 'Aldrich', sans-serif
 }
-
-/* form stuff */
-form {
+.skills-container {
   margin: 0 auto;
-  width: 400px;
-  /* form outline */
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 1em;
+  width: 100%;
+  display: table;
+  border-spacing: 10px;
+}
+div.card {
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px;
+  /* margin-left: 30% ;
+  margin-right: 30%; */
+  background: linear-gradient(135deg, #eb648c 0%, #ce587b 100%);
+  margin: 20px;
+  margin-top: 20%;
+  margin-right: 20%;
+  display: table-cell;
+  overflow: hidden;
 }
 
+.card h4 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px;
+  word-wrap: break-word ;
+}
+.desc {
+  text-align: center;
+  border-bottom-right-radius:5px;
+  border-bottom-left-radius:5px ;
+}
+
+.desc p {
+  margin: 0;
+  line-height: 1.5;
+  flex: 1 1 auto;
+  padding: 5px;
+}
+
+/* Projects Section Styles */
+ .cards {
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   justify-content: center;
+ }
+
+ .cards-item {
+   display: flex;
+   padding: 1rem;
+ }
+
+ .project-card {
+   background-color: #fafafa;
+   border-radius: 0.25rem;
+   box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+ }
+ 
+ .card-content {
+   display: flex;
+   flex: 1 1 auto;
+   flex-direction: column;
+   padding: 1rem;
+   width: 90%;
+ }
+ 
+ .card-image {
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-top-left-radius: 0.25rem;
+   border-top-right-radius: 0.25rem;
+   filter: contrast(70%);
+   overflow: hidden;
+   position: relative;
+ }
+
+ .card-title {
+   color: black;
+   font-size: 1.25rem;
+   font-weight: 300;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+ }
+
+ .card-text {
+   flex: 1 1 auto;
+   font-size: 0.875rem;
+   line-height: 1.5;
+   margin-bottom: 1.25rem;
+ }
+
+ .card__image--fitpad {
+   background-image: url('https://ibb.co/yp47DQg');
+ }
 
 form div + div {
   margin-top: 1em;
@@ -134,7 +353,6 @@ input,
 textarea {
   /* To make sure that all text fields have the same font settings
      By default, textareas have a monospace font */
-  font-family: 'Maven Pro', sans-serif;
 
   /* Uniform text field size */
   width: 300px;
@@ -193,5 +411,13 @@ and (max-device-width : 568px) {
     border: solid white;
     margin:auto;
     max-width: 300px;
+  }
+  .card {
+    display: flex;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px;
+    flex-direction: column;
+    /* margin-left: 30% ;
+    margin-right: 30%; */
   }
 }

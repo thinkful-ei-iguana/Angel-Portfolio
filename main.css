@@ -18,29 +18,29 @@ html {
   font-size: 10px;
   box-sizing: border-box
 }
-/* 
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-} */
+
 a {
   text-decoration: none;
   color: #fafafa;
+}
+
+hr {
+  border-top: 1px solid grey;
+  align-content: center;
+  width: 50%;
+  outline: 0;
 }
 
 section {
   min-height: 200px;
   padding: 6% 0;
   background-color: #fafafa;
-  border: solid gray;
-  color: white;
+  color: #fafafa;
 }
 
 section:nth-child(even) {
   background-color: #fafafa;
   color:black;
-  border: solid black;
 }
 
 footer {
@@ -48,7 +48,7 @@ footer {
   background-color: gray;
   align-items:right;
   color: white;
-  border: solid black;
+ 
 }
 
 /* Nav Menu Styles */
@@ -57,6 +57,7 @@ img.logo {
   font-size: 100px;
   padding-top: 8px;
 }
+
 header { 
   width: 100%;
   height: 5rem;
@@ -132,8 +133,9 @@ nav {
 }
 
 a.nav-link:hover {
-  color: rgba(102, 50, 145, 0.9);
+  color: #fafafa;
 }
+
 /* Hero Styles */
 .hero {
   background: 
@@ -158,7 +160,6 @@ a.nav-link:hover {
   text-transform: lowercase;
   text-align: justify;
   text-indent: 2em;
-
 }
 
 .main-message h3 {
@@ -168,7 +169,7 @@ a.nav-link:hover {
 .btn {
   background-color: #eb648c;
   color: #fafafa;
-  border-radius: 2rem;
+  border-radius: 5px;
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem 2.5rem;
@@ -202,7 +203,6 @@ blockquote {
   padding: 10px 20px;
   line-height: 1.4;
   text-align: left;
-  
 }
 
 blockquote:before {
@@ -216,6 +216,7 @@ blockquote:before {
   color: black;
   font-size:15rem;
 }
+
 .aboutMePara {
   text-align: justify;
   text-indent: 2em
@@ -231,28 +232,29 @@ section.experience {
   background-size: cover;
   justify-content: center;
 }
+
 .skills-title {
   color: #fafafa;
   font-family: 'Aldrich', sans-serif;
 }
-h4.title {
-  font-family: 'Aldrich', sans-serif
+
+.card h4.title-dev-tools {
+  font-family: 'Aldrich', sans-serif;
+  margin-bottom: 5px;
+  padding-bottom: 0;
 }
+
 .skills-container {
   margin: 0 auto;
   width: 100%;
   display: table;
   border-spacing: 10px;
+  overflow: hidden;
 }
 div.card {
-  box-shadow: 2px 2px 20px black;
   border-radius: 5px;
-  /* margin-left: 30% ;
-  margin-right: 30%; */
   background: linear-gradient(135deg, #eb648c 0%, #ce587b 100%);
-  margin: 20px;
   margin-top: 20%;
-  margin-right: 20%;
   display: table-cell;
   overflow: hidden;
 }
@@ -262,6 +264,7 @@ div.card {
   text-transform: uppercase;
   padding: 10px;
   word-wrap: break-word ;
+  font-family: 'Aldrich', sans-serif
 }
 .desc {
   text-align: center;
@@ -277,118 +280,205 @@ div.card {
 }
 
 /* Projects Section Styles */
- .cards {
-   display: flex;
-   flex-wrap: wrap;
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   justify-content: center;
- }
+section#projects h1 {
+  font-family: 'Aldrich', sans-serif;
+}
 
- .cards-item {
-   display: flex;
-   padding: 1rem;
- }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
 
- .project-card {
-   background-color: #fafafa;
-   border-radius: 0.25rem;
-   box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
-   display: flex;
-   flex-direction: column;
-   overflow: hidden;
+.cards-item {
+  display: flex;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+img.project-photo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 2px 2px 12px black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+div.project-card {
+  background-color: #fafafa;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 12px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 691px;
  }
  
- .card-content {
-   display: flex;
-   flex: 1 1 auto;
-   flex-direction: column;
-   padding: 1rem;
-   width: 90%;
- }
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 90%;
+}
  
- .card-image {
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   border-top-left-radius: 0.25rem;
-   border-top-right-radius: 0.25rem;
-   filter: contrast(70%);
-   overflow: hidden;
-   position: relative;
- }
-
- .card-title {
-   color: black;
-   font-size: 1.25rem;
-   font-weight: 300;
-   letter-spacing: 2px;
-   text-transform: uppercase;
- }
-
- .card-text {
-   flex: 1 1 auto;
-   font-size: 0.875rem;
-   line-height: 1.5;
-   margin-bottom: 1.25rem;
- }
-
- .card__image--fitpad {
-   background-image: url('https://ibb.co/yp47DQg');
- }
-
-form div + div {
-  margin-top: 1em;
+.card-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
 }
 
-label {
-  /* Uniform size & alignment */
-  display: inline-block ;
-  width: 90px;
-  text-align: left;
+.card-title {
+  color: black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  font-weight: bold;
 }
 
-input, 
-textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-
-  /* Uniform text field size */
-  width: 300px;
-  box-sizing: border-box;
-
-  /* Match form field borders */
-  border: 1px solid #999;
+.card-text {
+  flex: 1 1 auto;
+  margin: 0;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  text-align: justify;
+  text-indent: 2em;
 }
 
-input:focus, 
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #000;
+.card__image--fence {
+  background-image: url(https://unsplash.it/800/600?image=59);
 }
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: text-top;
-
-  /* Provide space to type some text */
-  height: 5em;
-}
-
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
+ 
+.btn-container {
+  display: flex;
+  justify-content: center;
 }
 
 button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: .5em;
+  color: black;
+  background-color: transparent;
+  border:0;
+  border-bottom: 1px solid lightgray;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  padding: 15px;
+  font-size: 20px;
+  outline: 0;
+}
+
+button:hover {
+  background-color:#eb648c;
+  color: #fafafa;
+}
+
+button a {
+  color: black;
+}
+
+/* Footer Stuff */
+footer {
+  background: 
+    linear-gradient(135deg, rgba(102, 50, 145, 0.9) 0%, rgba(72, 56, 149, 0.8) 100%), 
+    url(portfolio-images/cyberhero2.gif) center no-repeat;
+  background-size: cover;
+}
+h3.contact-me-footer {
+  font-family: 'Nunito', sans-serif;
+}
+img.footer-logo {
+  display: flex;
+  justify-content: left;
+  max-height: 100px;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
 }
 
 
 /* Media Query Stuff */
+
+@media screen and (min-width: 700px) {
+  /* Styles to expand Nav Menu on larger screens */
+  header {
+    height: 8rem;
+  }
+
+  .navMenu {
+    width: 3.5rem;
+  }
+
+  .nav-list {
+    width: initial;
+    height: initial;
+    background-color: transparent;
+    position: initial;
+    top: initial;
+    flex-direction: row;
+    right: initial;
+    transition: initial;
+    display: flex;
+  }
+
+  .menu-icons {
+    display: none;
+  }
+
+  .nav-item {
+    margin: 0 2.5rem;
+  }
+  
+  .nav-link, .current {
+    color: #fafafa;
+    position: relative;
+    font-size: 1.3rem;
+  }
+
+  .nav-link::before, .current::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    background-color: #eb648c;
+    height: 2px;
+    width: 100%;
+    transition: transform 650ms;
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+
+  .current::before {
+    transform: scaleX(1);
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+    color: #fafafa;
+  }
+
+}
+
 
 @media only screen 
 and (min-device-width : 320px) 
@@ -402,22 +492,70 @@ and (max-device-width : 568px) {
     font-size: 20px;
   }
 
+  p.short-summary {
+    font-size: 18px;
+  }
+
+  .main-message h2 {
+    font-size: 15px;
+  }
+
   img.logo{
     height:auto;
     width:50px;
     float: left;
   }
+
   img.quizApp {
     border: solid white;
     margin:auto;
     max-width: 300px;
   }
-  .card {
+
+  div.card {
     display: flex;
-    box-shadow: 2px 2px 20px black;
     border-radius: 5px;
     flex-direction: column;
-    /* margin-left: 30% ;
-    margin-right: 30%; */
+    margin: 0 20% 20%;
+    margin-bottom: 10px;
+  }
+
+  div.skills-container {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h4.title {
+    font-size: 15px;
+  }
+
+  p.aboutMePara {
+    font-size: 12px;
+  }
+
+  a.btn {
+    font-size: 15px;
+  }
+
+  .desc p {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+  .social-links {
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  .social-links i {
+    font-size: 40px;
+  }
+  h3.contact-me-footer {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
   }
 }

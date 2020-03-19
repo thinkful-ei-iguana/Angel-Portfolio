@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eefca83f05.js" crossorigin="anonymous"></script>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
  
@@ -44,12 +48,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href = "mailto: ala31996@gmail.com"> Contact Me </a>
+            <a href = "mailto: ala31996@gmail.com" class="nav-link"> Contact Me </a>
           </li>
           <li class="nav-item">
             <a 
               href = "https://docs.google.com/document/d/17F-g3AdyceOmDp5YTiVo0L0lCvoPHyLNX5JCXZbVyX0/edit?usp=sharing"
               target="_blank"
+              class="nav-link"
             > 
               Resume 
             </a>
@@ -81,6 +86,7 @@
           <div class="container">
             <div class="about-me-section">
               <h1> About Me </h1>
+              <hr> </hr>
                 <blockquote>
                   <h1 class="qoute"> 
                     Hard work beats talent, when talent refuses to work hard... 
@@ -103,6 +109,7 @@
 
         <section class="experience">
           <h1 class="skills-title"> Technical Skills </h1>
+          <hr> </hr>
           <div class="skills-container">
             
             <div class ="card">
@@ -128,7 +135,7 @@
             </div>
 
             <div class ="card"> 
-              <h4 class="title"> Dev. Tools </br> & Methods </h4>
+              <h4 class="title-dev-tools"> Dev. Tools </br> & Methods </h4>
                 <div class="desc">
                     <p> Git </p>
                     <p> GitHub </p>
@@ -147,29 +154,35 @@
         </section>
 
         <section id="projects">
-
+          <h1> Projects </h1>
+            <hr> </hr>
            <!-- Project 1 -->
            <ul class="cards">
             <li class="cards-item">
               <div class="project-card">
-                <div class="card__image card__image--fitpad"></div>
+                <!-- <div class="card__image card__image--fence"></div> -->
+                
                 <div class="card-content">
                   <div class="card-title">
                     Fitpad
                   </div>
+                  <img class="project-photo" src="portfolio-images/fitpad.png">
                   <p class="card-text">
                     Developed, tested and designed a Full-Stack application to effortlessly keep track of your weight lifting sessions. The technologies used to build this application include React, JSON, Node, PostgreSQL, Express, and CSS.
                   </p>
-                  <button class="projects-btn">
-                    <a href="https://fitpad.now.sh/" target="_blank"> 
-                      Live Demo 
-                    </a>
-                  </button>
-                  <button class="projects-btn">
-                    <a href="https://gist.github.com/aliceaa396/8635a80457835309a1827c9fe8e9d46e#file-capstone-i-fitpad" target="_blank"> 
-                      GitHub 
-                    </a>
-                  </button>
+                  <div class="btn-container">
+                    <button class="projects-btn">
+                      <a href="https://fitpad.now.sh/" target="_blank"> 
+                        Live Demo 
+                      </a>
+                    </button>
+                    <button class="projects-btn">
+                      <a href="https://gist.github.com/aliceaa396/8635a80457835309a1827c9fe8e9d46e#file-capstone-i-fitpad" target="_blank"> 
+                        GitHub 
+                      </a>
+                    </button>
+                  </div>
+                  
                 </div>
               </div>
             </li>
@@ -184,19 +197,23 @@
                   <div class="card-title">
                     Spanish Spaced Repitition
                   </div>
+                  <img class="project-photo" src="portfolio-images/spanishspaced.PNG">
                   <p class="card-text">
                     Designed and developed a Full-Stack application that utilizes spaced repetition to teach users a new language. The technologies used to build this application include React, CSS, Node, as well as PostgreSQL.
                   </p>
-                  <button class="projects-btn">
-                    <a href="https://spaced-repetition-ten.now.sh/" target="_blank"> 
-                      Live Demo 
-                    </a>
-                  </button>
-                  <button class="projects-btn">
-                    <a href="https://github.com/thinkful-ei-iguana/Jack-Angel-Capstone-II-Frontend" target="_blank">
-                      GitHub 
-                    </a>
-                  </button>
+                  <div class="btn-container">
+                    <button class="projects-btn">
+                      <a href="https://spaced-repetition-ten.now.sh/" target="_blank"> 
+                        Live Demo 
+                      </a>
+                    </button>
+                    <button class="projects-btn">
+                      <a href="https://github.com/thinkful-ei-iguana/Jack-Angel-Capstone-II-Frontend" target="_blank">
+                        GitHub 
+                      </a>
+                    </button>
+                  </div>
+                  
                 </div>
               </div>
             </li>
@@ -211,19 +228,22 @@
                   <div class="card-title">
                     Frenmo
                   </div>
+                  <img class="project-photo" src="portfolio-images/frenmo.PNG">
                   <p class="card-text">
                     Acted a project manager on a team of five developers led by one senior developer. Contributed to the development of the front-end of the Full-Stack application that allows users to send virtual coupons to friends and family. The technologies used to build this application include React, CSS, Node, as well as PostgreSQL.
                   </p>
-                  <button class="projects-btn">
-                    <a href="https://frenmo.now.sh/login" target="_blank">
-                      Live Demo 
-                    </a>
-                  </button>
-                  <button class="projects-btn">
-                    <a href="https://gist.github.com/aliceaa396/9bc42fbfbb49f381e0314b9e0a8df4fe" target="_blank">
-                      GitHub 
-                    </a>
-                  </button>
+                  <div class="btn-container">
+                    <button class="projects-btn">
+                      <a href="https://frenmo.now.sh/login" target="_blank">
+                        Live Demo 
+                      </a>
+                    </button>
+                    <button class="projects-btn">
+                      <a href="https://gist.github.com/aliceaa396/9bc42fbfbb49f381e0314b9e0a8df4fe" target="_blank">
+                        GitHub 
+                      </a>
+                    </button>
+                  </div>      
                 </div>
               </div>
             </li>
@@ -238,19 +258,22 @@
                   <div class="card-title">
                     Sharkmarks
                   </div>
+                  <img class="project-photo" src="portfolio-images/sharkmarksSS.PNG">
                   <p class="card-text">
-                    Designed and developed a bookmarking application that keeps track of your favorite websites.Tech:  jQuery, HTML, CSS, REST API.
+                    Designed and developed a bookmarking application that keeps track of your favorite websites.The technologies used to build this application include.
                   </p>
-                  <button class="projects-btn">
-                    <a href="https://thinkful-ei-iguana.github.io/Angel_Bookmarks_App/" target="_blank"> 
-                      Live Demo
-                    </a>
-                  </button>
-                  <button class="projects-btn">
-                    <a href="https://github.com/thinkful-ei-iguana/Angel_Bookmarks_App" target="_blank">
-                      GitHub
-                   </a>
-                  </button>
+                  <div class="btn-container">
+                      <button class="projects-btn">
+                        <a href="https://thinkful-ei-iguana.github.io/Angel_Bookmarks_App/" target="_blank"> 
+                          Live Demo
+                        </a>
+                    </button>
+                      <button class="projects-btn">
+                        <a href="https://github.com/thinkful-ei-iguana/Angel_Bookmarks_App" target="_blank">
+                          GitHub
+                        </a>
+                      </button>
+                  </div>       
                 </div>
               </div>
             </li>
@@ -265,25 +288,55 @@
                   <div class="card-title">
                     Matrix Quiz
                   </div>
+                  <img class="project-photo" src="portfolio-images/matrixquizSS.PNG">
                   <p class="card-text">
-                    Built a quiz application to test a user’s knowledge of the Matrix Films. Tech: jQuery, HTML, CSS, REST API.
+                    Built a quiz application to test a user’s knowledge of the Matrix Films.The technologies used to build this application include jQuery, HTML, CSS, REST API.
                   </p>
-                  <button class="projects-btn">
-                    <a href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/" target="_blank"> 
-                      Live Demo
-                    </a>
-                  </button>
-                  <button class="projects-btn">
-                    <a href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App" target="_blank"> 
-                      GitHub
-                    </a>
-                  </button>
+                  <div class="btn-container">
+                    <button class="projects-btn">
+                      <a href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/" target="_blank"> 
+                        Live Demo
+                      </a>
+                    </button>
+                    <button class="projects-btn">
+                      <a href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App" target="_blank"> 
+                        GitHub
+                      </a>
+                    </button>
+                  </div>
                 </div>
               </div>
             </li>
           </ul>
     </main>
-    <footer role="content-info"><a href = "mailto: ala31996@gmail.com"> Email Me! </footer>
+    <footer role="content-info">
+      
+
+      <h3 class="contact-me-footer"> Get In Touch </h3>
+      <div class="social-links">
+      
+        <a
+          href="https://github.com/aliceaa396"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i class="fab fa-github-square" aria-hidden="true"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/angel-alicea-iii/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+
+        <a href="mailto: ala31996@gmail.com">
+          <i class="fa fa-envelope-square"></i>
+        </a>
+      </div>
+      
+    </footer>
       <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

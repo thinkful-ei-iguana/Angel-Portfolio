@@ -147,7 +147,6 @@ a.nav-link:hover {
 .main-message {
   width: 100%;
   color: #fafafa;
-  text-transform: uppercase;
 }
 
 .main-message h1 {
@@ -157,13 +156,8 @@ a.nav-link:hover {
 .main-message p {
   color: whitesmoke;
   align-content: center;
-  text-transform: lowercase;
   text-align: justify;
   text-indent: 2em;
-}
-
-.main-message h3 {
-  font-size: 1.6rem;
 }
 
 .btn {

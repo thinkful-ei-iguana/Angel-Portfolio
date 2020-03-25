@@ -19,21 +19,20 @@
 <body>
   <header>
     <div class="container">
-      <nav>
-
+      <nav aria-label="nav-menu">
         <div class="navMenu">
           <a href="index.html">
-              <img class="logo" src="portfolio-images/logo.png" alt="">
+              <img class="logo" src="portfolio-images/logo.png" alt="logo">
           </a>
         </div>
 
         <div class="menu-icons open">
-          <i class="icon ion-md-menu"></i>
+          <i aria-label="Open" class="icon ion-md-menu"></i>
         </div>
 
-        <ul class="nav-list">
+        <ul class="nav-list" aria-label="nav-menu-list">
           <div class="menu-icons close">
-            <i class="icon ion-md-close"></i>
+            <i aria-label="Close" class="icon ion-md-close"></i>
           </div>
 
           <li class="nav-item">
@@ -48,7 +47,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href = "mailto: ala31996@gmail.com" class="nav-link"> Contact Me </a>
+            <a href = "mailto:ala31996@gmail.com" class="nav-link"> Contact Me </a>
           </li>
           <li class="nav-item">
             <a 
@@ -65,15 +64,15 @@
   </header>
     
   
-    <main role="main">
+    <main>
         
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero">
           <div class="container">
             <div class="main-message">
               <h2> Angel L. Alicea III </h2>
               <h1> Full Stack Web Developer </h1>
               <p class="short-summary">
-                Hi I'm Angel Alicea, I'm a highly motivated Full-Stack Web Developer with a passion for UI and UX. I pride myself on my work ethic and willingness to do whatever is necessary to accomplish a goal I’ve set for myself. One of the most beautiful things about life is that every day is an opportunity to learn and take steps towards achieving your life long goals!
+                Hi, I'm Angel Alicea, I'm a highly motivated Full-Stack Web Developer with a passion for UI and UX eager to join your team of Web Developers. I pride myself on my work ethic and willingness to do whatever is necessary to accomplish a goal I’ve set for myself. When I'm not behind a computer screen I enjoy going to the gym or walking on a beautiful trail listening to Rock🤘. One of the most beautiful things about life is that every day is an opportunity to learn something new and take steps towards achieving your life long goals!
               </p>
               <div class="cta">
                 <a href="#projects" class="btn">See My Projects </a>
@@ -82,7 +81,7 @@
           </div>
         </section>
 
-        <section id="aboutMe">
+        <section id="aboutMe" aria-labelledby="aboutMe">
           <div class="container">
             <div class="about-me-section">
               <h1> About Me </h1>
@@ -100,21 +99,21 @@
                 Upon receiving my undergraduate degree from Rider University, I began to pursue my Master's Degree in Homeland Security with hopes of becoming a Cyber Security Software Developer. While in my first semester of graduate school, I began self-teaching myself Ruby, Javascript, and HTML. That's when I fell in love with web development and decided to research software engineering boot camps. 
               </p>
               <p class="aboutMePara">
-                My favorite aspects of web and software development are the constant challenges they present. During my time at Thinkful, there was no lack of new challenges to be faced. Although stressful, I embraced the opportunities with joy because the sense of accomplishment I feel when finally getting a program to work as anticipated is unparalleled. What I may lack in years of experience, I more than makeup for with undying work ethic and tenacity to do my absolute best. As I continue through my career I hope to also start my own fitness coaching business to help others achieve their ideal physiques. 
+                My favorite aspects of web and software development are the constant challenges they present. During my time at Thinkful, there was no lack of new challenges to be faced. Although stressful, I embraced the opportunities with joy because the sense of accomplishment I feel when finally getting a program to work as anticipated is unparalleled. Another aspect of programming I love is pair programming. I enjoy being able to learn from someone else, it is also extremely helpful having an extra brain to help solve challenges with. What I may lack in years of experience, I more than make up for with undying work ethic and tenacity to do my absolute best. As I continue through my career I hope to also start my own fitness coaching business to help others achieve their ideal physiques. 
               </p>
             </div>
           </div>
           
         </section>
 
-        <section class="experience">
+        <section class="experience" aria-labelledby="experience">
           <h1 class="skills-title"> Technical Skills </h1>
-          <hr> </hr>
+            <hr/>
           <div class="skills-container">
             
             <div class ="card">
               <h4 class="title"> Front-End</h4>
-                <div class="desc">
+                <div class="desc" aria-labelledby="title">
                     <p> React </p> </br>
                     <p> Vanilla JavaScript </p> </br>
                     <p> HTML & CSS </p> </br>
@@ -125,7 +124,7 @@
   
             <div class ="card">
               <h4 class="title"> Back-End </h4>
-                <div class="desc">
+                <div class="desc" aria-labelledby="title">
                   <p> Node </p> </br>
                   <p> Express </p> </br>
                   <p> PostgreSQL </p> </br>
@@ -136,7 +135,7 @@
 
             <div class ="card"> 
               <h4 class="title-dev-tools"> Dev. Tools </br> & Methods </h4>
-                <div class="desc">
+                <div class="desc" aria-labelledby="title-dev-tools">
                     <p> Git </p>
                     <p> GitHub </p>
                     <p> Heroku </p>
@@ -153,30 +152,29 @@
           </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" aria-labelledby="projects">
           <h1> Projects </h1>
-            <hr> </hr>
+            <hr />
            <!-- Project 1 -->
-           <ul class="cards">
+           <ul class="cards" aria-labelledby="card-title">
             <li class="cards-item">
               <div class="project-card">
-                <!-- <div class="card__image card__image--fence"></div> -->
-                
+
                 <div class="card-content">
                   <div class="card-title">
                     Fitpad
                   </div>
-                  <img class="project-photo" src="portfolio-images/fitpad.png">
+                  <img class="project-photo" src="portfolio-images/fitpad.png" alt="project photo">
                   <p class="card-text">
-                    Developed, tested and designed a Full-Stack application to effortlessly keep track of your weight lifting sessions. The technologies used to build this application include React, JSON, Node, PostgreSQL, Express, and CSS.
+                    Developed, tested and designed a Full-Stack application to effortlessly keep track of a users weight lifting sessions. The technologies used to build this application include React, JSON, Node, PostgreSQL, Express, and CSS.
                   </p>
                   <div class="btn-container">
-                    <button class="projects-btn">
+                    <button aria-label="Live Demo" class="projects-btn">
                       <a href="https://fitpad.now.sh/" target="_blank"> 
                         Live Demo 
                       </a>
                     </button>
-                    <button class="projects-btn">
+                    <button aria-label="GitHub" class="projects-btn">
                       <a href="https://gist.github.com/aliceaa396/8635a80457835309a1827c9fe8e9d46e#file-capstone-i-fitpad" target="_blank"> 
                         GitHub 
                       </a>
@@ -189,7 +187,7 @@
           </ul>
 
           <!-- Project 2 -->
-          <ul class="cards">
+          <ul class="cards" aria-labelledby="card-title">
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image spaced-reps"></div>
@@ -197,17 +195,17 @@
                   <div class="card-title">
                     Spanish Spaced Repitition
                   </div>
-                  <img class="project-photo" src="portfolio-images/spanishspaced.PNG">
+                  <img class="project-photo" src="portfolio-images/spanishspaced.PNG" alt="project photo">
                   <p class="card-text">
                     Designed and developed a Full-Stack application that utilizes spaced repetition to teach users a new language. The technologies used to build this application include React, CSS, Node, as well as PostgreSQL.
                   </p>
                   <div class="btn-container">
-                    <button class="projects-btn">
+                    <button aria-label="Live Demo" class="projects-btn">
                       <a href="https://spaced-repetition-ten.now.sh/" target="_blank"> 
                         Live Demo 
                       </a>
                     </button>
-                    <button class="projects-btn">
+                    <button aria-label="GitHub" class="projects-btn">
                       <a href="https://github.com/thinkful-ei-iguana/Jack-Angel-Capstone-II-Frontend" target="_blank">
                         GitHub 
                       </a>
@@ -220,7 +218,7 @@
           </ul>
 
           <!-- Project 3 -->
-          <ul class="cards">
+          <ul class="cards" aria-labelledby="card-title">
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image frenmo"></div>
@@ -228,17 +226,17 @@
                   <div class="card-title">
                     React MDL Portfolio
                   </div>
-                  <img class="project-photo" src="portfolio-images/React-MDL.PNG">
+                  <img class="project-photo" src="portfolio-images/React-MDL.PNG" alt="project photo">
                   <p class="card-text">
                     Designed and developed an alternative version of my portfolio using React MDL and CSS. This project allowed me to get more familiar with the popular tool kit.
                   </p>
                   <div class="btn-container">
-                    <button class="projects-btn">
+                    <button aria-label="Live Demo" class="projects-btn">
                       <a href="https://angelaliceasportfolio.now.sh/" target="_blank">
                         Live Demo 
                       </a>
                     </button>
-                    <button class="projects-btn">
+                    <button aria-label="GitHub" class="projects-btn">
                       <a href="https://github.com/aliceaa396/React-Portfolio" target="_blank">
                         GitHub 
                       </a>
@@ -250,7 +248,7 @@
           </ul>
 
           <!-- Project 4 -->
-          <ul class="cards">
+          <ul class="cards" aria-labelledby="card-title">
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image frenmo"></div>
@@ -258,17 +256,17 @@
                   <div class="card-title">
                     Frenmo
                   </div>
-                  <img class="project-photo" src="portfolio-images/frenmo.PNG">
+                  <img class="project-photo" src="portfolio-images/frenmo.PNG" alt="project photo">
                   <p class="card-text">
                     Acted a project manager on a team of five developers led by one senior developer. Contributed to the development of the front-end of the Full-Stack application that allows users to send virtual coupons to friends and family. The technologies used to build this application include React, CSS, Node, as well as PostgreSQL.
                   </p>
                   <div class="btn-container">
-                    <button class="projects-btn">
+                    <button aria-label="Live Demo" class="projects-btn">
                       <a href="https://frenmo.now.sh/login" target="_blank">
                         Live Demo 
                       </a>
                     </button>
-                    <button class="projects-btn">
+                    <button aria-label="GitHub" class="projects-btn">
                       <a href="https://gist.github.com/aliceaa396/9bc42fbfbb49f381e0314b9e0a8df4fe" target="_blank">
                         GitHub 
                       </a>
@@ -280,7 +278,7 @@
           </ul>
           
           <!-- Project 5 -->
-          <ul class="cards">
+          <ul class="cards" aria-labelledby="card-title">
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image sharkmarks"></div>
@@ -288,17 +286,17 @@
                   <div class="card-title">
                     Sharkmarks
                   </div>
-                  <img class="project-photo" src="portfolio-images/sharkmarksSS.PNG">
+                  <img class="project-photo" src="portfolio-images/sharkmarksSS.PNG" alt="project photo">
                   <p class="card-text">
                     Designed and developed a bookmarking application that keeps track of your favorite websites.The technologies used to build this application include.
                   </p>
                   <div class="btn-container">
-                      <button class="projects-btn">
+                      <button aria-label="Live Demo" class="projects-btn">
                         <a href="https://thinkful-ei-iguana.github.io/Angel_Bookmarks_App/" target="_blank"> 
                           Live Demo
                         </a>
                     </button>
-                      <button class="projects-btn">
+                      <button aria-label="GitHub" class="projects-btn">
                         <a href="https://github.com/thinkful-ei-iguana/Angel_Bookmarks_App" target="_blank">
                           GitHub
                         </a>
@@ -310,7 +308,7 @@
           </ul>
 
           <!-- Project 6 -->
-          <ul class="cards">
+          <ul class="cards" aria-labelledby="card-title">
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image matrix"></div>
@@ -318,17 +316,17 @@
                   <div class="card-title">
                     Matrix Quiz
                   </div>
-                  <img class="project-photo" src="portfolio-images/matrixquizSS.PNG">
+                  <img class="project-photo" src="portfolio-images/matrixquizSS.PNG" alt="project photo">
                   <p class="card-text">
                     Built a quiz application to test a user’s knowledge of the Matrix Films.The technologies used to build this application include jQuery, HTML, CSS, REST API.
                   </p>
                   <div class="btn-container">
-                    <button class="projects-btn">
+                    <button aria-label="Live Demo" class="projects-btn">
                       <a href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/" target="_blank"> 
                         Live Demo
                       </a>
                     </button>
-                    <button class="projects-btn">
+                    <button aria-label="GitHub" class="projects-btn">
                       <a href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App" target="_blank"> 
                         GitHub
                       </a>
@@ -338,10 +336,10 @@
               </div>
             </li>
           </ul>
+        </section>
     </main>
-    <footer role="content-info">
-      
 
+    <footer>
       <h3 class="contact-me-footer"> Get In Touch </h3>
       <div class="social-links">
       
@@ -361,12 +359,12 @@
           <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
 
-        <a href="mailto: ala31996@gmail.com">
+        <a href="mailto:ala31996@gmail.com">
           <i class="fa fa-envelope-square"></i>
         </a>
       </div>
       
     </footer>
-      <script type="text/javascript" src="index.js"></script>
+      <script src="index.js"></script>
 </body>
 </html>

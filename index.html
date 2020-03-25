@@ -13,12 +13,12 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
- 
+    
 </head>
 
 <body>
-  <script src="index.js"></script>
-  <header>
+  
+  <header aria-label="header-area">
     <div class="container">
       <nav aria-label="nav-menu">
         <div class="navMenu">
@@ -66,8 +66,7 @@
     
   
     <main>
-        
-        <section class="hero" aria-labelledby="hero">
+        <section class="hero" aria-label="hero">
           <div class="container">
             <div class="main-message">
               <h2> Angel L. Alicea III </h2>
@@ -82,12 +81,12 @@
           </div>
         </section>
 
-        <section id="aboutMe" aria-labelledby="aboutMe">
+        <section id="aboutMe" aria-label="aboutMe">
           <div class="container">
             <div class="about-me-section">
               <h1> About Me </h1>
               <hr> </hr>
-                <blockquote>
+                <blockquote aria-label="qoute">
                   <h1 class="qoute"> 
                     Hard work beats talent, when talent refuses to work hard... 
                   </h1>
@@ -107,14 +106,14 @@
           
         </section>
 
-        <section class="experience" aria-labelledby="experience">
+        <section class="experience" aria-label="experience">
           <h1 class="skills-title"> Technical Skills </h1>
             <hr/>
           <div class="skills-container">
             
             <div class ="card">
               <h4 class="title"> Front-End</h4>
-                <div class="desc" aria-labelledby="title">
+                <div class="desc" aria-label="Front-End-titles">
                     <p> React </p> </br>
                     <p> Vanilla JavaScript </p> </br>
                     <p> HTML & CSS </p> </br>
@@ -125,7 +124,7 @@
   
             <div class ="card">
               <h4 class="title"> Back-End </h4>
-                <div class="desc" aria-labelledby="title">
+                <div class="desc" aria-label="Back-End-titles">
                   <p> Node </p> </br>
                   <p> Express </p> </br>
                   <p> PostgreSQL </p> </br>
@@ -136,7 +135,7 @@
 
             <div class ="card"> 
               <h4 class="title-dev-tools"> Dev. Tools </br> & Methods </h4>
-                <div class="desc" aria-labelledby="title-dev-tools">
+                <div class="desc" aria-label="dev-tools-title">
                     <p> Git </p>
                     <p> GitHub </p>
                     <p> Heroku </p>
@@ -153,11 +152,11 @@
           </div>
         </section>
 
-        <section id="projects" aria-labelledby="projects">
+        <section id="projects" aria-label="projects">
           <h1> Projects </h1>
             <hr />
            <!-- Project 1 -->
-           <ul class="cards" aria-labelledby="card-title">
+           <ul class="cards" aria-label="Fitpad-project-title">
             <li class="cards-item">
               <div class="project-card">
 
@@ -188,7 +187,10 @@
           </ul>
 
           <!-- Project 2 -->
-          <ul class="cards" aria-labelledby="card-title">
+          <ul 
+            class="cards" 
+            aria-label="Spanish-Spaced-Repitition-project-title"
+          >
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image spaced-reps"></div>
@@ -219,7 +221,7 @@
           </ul>
 
           <!-- Project 3 -->
-          <ul class="cards" aria-labelledby="card-title">
+          <ul class="cards" aria-label="React-MDL-Portfolio-project-title">
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image frenmo"></div>
@@ -249,7 +251,7 @@
           </ul>
 
           <!-- Project 4 -->
-          <ul class="cards" aria-labelledby="card-title">
+          <ul class="cards" aria-label="Frenmo-project-title">
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image frenmo"></div>
@@ -279,7 +281,7 @@
           </ul>
           
           <!-- Project 5 -->
-          <ul class="cards" aria-labelledby="card-title">
+          <ul class="cards" aria-label="Sharkmarks-project-title">
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image sharkmarks"></div>
@@ -309,7 +311,7 @@
           </ul>
 
           <!-- Project 6 -->
-          <ul class="cards" aria-labelledby="card-title">
+          <ul class="cards" aria-label="Matrix-Quiz-project-title">
             <li class="cards-item">
               <div class="project-card">
                 <div class="card-image matrix"></div>
@@ -340,8 +342,8 @@
         </section>
     </main>
 
-    <footer>
-      <h3 class="contact-me-footer"> Get In Touch </h3>
+    <footer aria-label="footer-menu">
+      <h3 class="contact-me-footer" aria-label="Get In Touch"> Get In Touch </h3>
       <div class="social-links">
       
         <a
@@ -364,7 +366,7 @@
           <i class="fa fa-envelope-square"></i>
         </a>
       </div>
-      
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

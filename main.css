@@ -21,7 +21,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #fafafa;
+  /* color: #fafafa; */
 }
 
 hr {
@@ -126,7 +126,7 @@ nav {
   margin: 1.5rem 0;
 }
 
-.nav-link {
+a.nav-link {
   font-size: 1.6rem;
   text-transform: uppercase;
   color: #fafafa
@@ -147,6 +147,7 @@ a.nav-link:hover {
 .main-message {
   width: 100%;
   color: #fafafa;
+  font-weight: bold;
 }
 
 .main-message h1 {
@@ -234,8 +235,7 @@ section.experience {
 
 .card h4.title-dev-tools {
   font-family: 'Aldrich', sans-serif;
-  margin-bottom: 5px;
-  padding-bottom: 0;
+  
 }
 
 .skills-container {
@@ -250,7 +250,7 @@ div.card {
   background: linear-gradient(135deg, #eb648c 0%, #ce587b 100%);
   margin-top: 20%;
   display: table-cell;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .card h4 {
@@ -271,6 +271,14 @@ div.card {
   line-height: 1.5;
   flex: 1 1 auto;
   padding: 5px;
+}
+
+.desc-short p {
+  margin: 15px;
+  line-height: 1.5;
+  flex: 1 1 auto;
+  padding: 5px;
+  text-align: center;
 }
 
 /* Projects Section Styles */
@@ -357,7 +365,7 @@ div.project-card {
   justify-content: center;
 }
 
-button {
+a.project-btn {
   color: black;
   background-color: transparent;
   border:0;
@@ -373,12 +381,12 @@ button {
   outline: 0;
 }
 
-button:hover {
+a.project-btn:hover {
   background-color:#eb648c;
   color: #fafafa;
 }
 
-button a {
+a.project-btn {
   color: black;
 }
 
@@ -537,7 +545,7 @@ and (max-device-width : 568px) {
     font-size: 15px;
   }
 
-  button {
+  a.project-btn {
     font-size: 15px;
   }
   .social-links {

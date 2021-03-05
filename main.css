@@ -136,14 +136,18 @@ a.nav-link:hover {
   color: #fafafa;
 }
 
-/* Hero Styles */
+/* Hero Styles 
 .hero {
   background: 
     linear-gradient(135deg, rgba(102, 50, 145, 0.9) 0%, rgba(72, 56, 149, 0.8) 100%), 
     url(portfolio-images/cyberpunk22.gif) center no-repeat;
   background-size: cover;
 }
+*/
 
+#vantajs {
+  box-shadow: 2px 2px 12px black;
+}
 .main-message {
   width: 100%;
   color: #fafafa;
@@ -221,11 +225,13 @@ blockquote:before {
 
 /* Skills Section  */
 section.experience {
-  background: 
+  /* background: 
     linear-gradient(135deg, rgba(102, 50, 145, 0.9) 0%, rgba(72, 56, 149, 0.8) 100%), 
     url(portfolio-images/cyberhero2.gif) center no-repeat;
+  */
   background-size: cover;
   justify-content: center;
+  box-shadow: 2px 2px 12px black;
 }
 
 .skills-title {
@@ -391,11 +397,9 @@ a.project-btn {
 }
 
 /* Footer Stuff */
-footer {
-  background: 
-    linear-gradient(135deg, rgba(102, 50, 145, 0.9) 0%, rgba(72, 56, 149, 0.8) 100%), 
-    url(portfolio-images/cyberhero2.gif) center no-repeat;
+#footer {
   background-size: cover;
+  box-shadow: 2px 2px 12px black;
 }
 h3.contact-me-footer {
   font-family: 'Nunito', sans-serif;

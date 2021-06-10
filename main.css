@@ -7,6 +7,10 @@ body {
   font-size: 20px;
   text-align: center;
   line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul {
@@ -17,6 +21,15 @@ html {
   font-family: "Nunito", sans-serif;
   font-size: 10px;
   box-sizing: border-box;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; 
+  margin: 0px;
+  padding: 0px;
+  
 }
 
 a {
@@ -32,10 +45,12 @@ hr {
 }
 
 section {
+  height: 100%;
   min-height: 200px;
   padding: 6% 0;
   background-color: #fafafa;
   color: #fafafa;
+  
 }
 
 section:nth-child(even) {
@@ -48,6 +63,18 @@ footer {
   background-color: gray;
   align-items: right;
   color: white;
+}
+
+/* Snap to section functionality */
+.child {
+  scroll-snap-align: start;
+}
+.bigContainer {
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(300px);
+  scroll-snap-type: y mandatory;
+  background: rgba (0, 0, 0, 0.65);
 }
 
 /* Nav Menu Styles */
@@ -88,7 +115,7 @@ nav {
 
 .menu-icons i {
   font-size: 3.5rem;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 
@@ -99,7 +126,7 @@ nav {
 .nav-list {
   width: 25rem;
   height: 100vh;
-  background-color: #eb648c;
+  background-color:black;
   position: fixed;
   top: 0;
   right: -26rem;
@@ -109,10 +136,12 @@ nav {
   transition: all 650ms ease-in-out;
   justify-content: center;
   align-items: center;
+  z-index : 1000;
 }
 
 .nav-list.active {
   right: 0;
+  
 }
 
 .close {
@@ -138,7 +167,17 @@ a.nav-link:hover {
 /* Hero Styles */
 /* .hero {
   background-size: cover;
+  height: 100%;
 } */
+
+#vantajs {
+  background: cover;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+}
 
 .main-message {
   width: 100%;
@@ -147,7 +186,7 @@ a.nav-link:hover {
 }
 
 .main-message h1 {
-  font-family: "Aldrich", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .main-message p {
@@ -158,8 +197,8 @@ a.nav-link:hover {
 }
 
 .btn {
-  background-color: #eb648c;
-  color: #fafafa;
+  background-color: white;
+  color: black;
   border-radius: 5px;
   display: inline-block;
   margin-top: 2rem;
@@ -169,17 +208,19 @@ a.nav-link:hover {
 }
 
 .btn:hover {
-  background-color: #ce587b;
+  background-color: transparent;
+  border:1px solid white;
+  color: white;
 }
 
 /* About Me Styles */
 .about-me-section h1 {
-  font-family: "Aldrich", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 h1 .qoute {
   margin: 0;
-  font-family: "Alderich", sans-serif;
+  font-family:'Lato', sans-serif;
   text-align: right;
   margin-top: 0px;
 }
@@ -214,24 +255,19 @@ blockquote:before {
 }
 
 /* Skills Section  */
-section.experience {
-  background: linear-gradient(
-      135deg,
-      rgba(102, 50, 145, 0.9) 0%,
-      rgba(72, 56, 149, 0.8) 100%
-    ),
-    url(portfolio-images/cyberhero2.gif) center no-repeat;
+section #experience {
   background-size: cover;
   justify-content: center;
 }
 
 .skills-title {
-  color: #fafafa;
-  font-family: "Aldrich", sans-serif;
+  font-family: 'Lato', sans-serif;
+  color: black;
 }
 
 .card h4.title-dev-tools {
-  font-family: "Aldrich", sans-serif;
+  font-family: 'Lato', sans-serif;
+  
 }
 
 .skills-container {
@@ -254,7 +290,7 @@ div.card {
   text-transform: uppercase;
   padding: 10px;
   word-wrap: break-word;
-  font-family: "Aldrich", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .desc {
   text-align: center;
@@ -279,9 +315,51 @@ div.card {
 
 /* Projects Section Styles */
 section#projects h1 {
-  font-family: "Aldrich", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
+/* Tabs Styles for Projects */
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+section #projects {
+  padding-top: 0;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab.active {
+  background-color: #ccc;
+}
+
+.tab:hover {
+  background-color: #aaaaaa;
+}
+
+.tab-content {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Project Cards Styles */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -289,6 +367,7 @@ section#projects h1 {
   margin: 0;
   padding: 0;
   justify-content: center;
+  margin-top: 10%;
 }
 
 .cards-item {
@@ -350,6 +429,7 @@ div.project-card {
   margin-bottom: 1.25rem;
   text-align: justify;
   text-indent: 2em;
+  color: black;
 }
 
 .card__image--fence {
@@ -363,9 +443,8 @@ div.project-card {
 
 a.project-btn {
   color: black;
+  border-radius: 5px;
   background-color: transparent;
-  border: 0;
-  border-bottom: 1px solid lightgray;
   max-width: 200px;
   display: flex;
   justify-content: center;
@@ -378,8 +457,9 @@ a.project-btn {
 }
 
 a.project-btn:hover {
-  background-color: #eb648c;
-  color: #fafafa;
+  background-color: black;
+  border:1px solid white;
+  color: white;
 }
 
 a.project-btn {
@@ -387,15 +467,7 @@ a.project-btn {
 }
 
 /* Footer Stuff */
-footer {
-  background: linear-gradient(
-      135deg,
-      rgba(102, 50, 145, 0.9) 0%,
-      rgba(72, 56, 149, 0.8) 100%
-    ),
-    url(portfolio-images/cyberhero2.gif) center no-repeat;
-  background-size: cover;
-}
+
 h3.contact-me-footer {
   font-family: "Nunito", sans-serif;
 }
@@ -462,7 +534,7 @@ img.footer-logo {
     position: absolute;
     left: 0;
     bottom: -0.5rem;
-    background-color: #eb648c;
+    background-color: purple;
     height: 2px;
     width: 100%;
     transition: transform 650ms;
@@ -481,6 +553,7 @@ img.footer-logo {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  
   #nav,
   li {
     padding: 4;
@@ -493,11 +566,21 @@ img.footer-logo {
   }
 
   p.short-summary {
-    font-size: 18px;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  
+  blockquote:before {
+    font-size: 35px;
   }
 
   .main-message h2 {
     font-size: 15px;
+  }
+
+  .main-message {
+    margin-top: 100px;
   }
 
   img.logo {

@@ -28,8 +28,9 @@
     <script src="https://kit.fontawesome.com/eefca83f05.js" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -86,10 +87,12 @@
     
   
     <main>
-        <section id="vantajs" class="hero" aria-label="hero">
+      <div class="bigContainer">
+        <section id="vantajs" aria-label="hero">
+          <!-- disabled class="child" for now  -->
           <div class="container">
             <div class="main-message">
-              <h2> Angel L. Alicea III </h2>
+              <h2> Angel L . Alicea III </h2>
               <h1> Full Stack Web Developer </h1>
               <p class="short-summary">
                 Hi, I'm Angel Alicea, I'm a highly motivated Full-Stack Web Developer with a passion for UI and UX eager to join your team of Web Developers. I pride myself on my work ethic and willingness to do whatever is necessary to accomplish a goal I’ve set for myself. When I'm not behind a computer screen I enjoy going to the gym or walking on a beautiful trail listening to Rock🤘. One of the most beautiful things about life is that every day is an opportunity to learn something new and take steps towards achieving your life long goals!
@@ -101,7 +104,8 @@
           </div>
         </section>
 
-        <section id="aboutMe" aria-label="aboutMe">
+        <section id="aboutMe"  aria-label="aboutMe">
+          <!-- disabled class="child" for now  -->
           <div class="container">
             <div class="about-me-section">
               <h1> About Me </h1>
@@ -124,7 +128,9 @@
           </div>
         </section>
 
-        <section id="exp" class="experience" aria-label="experience">
+        <section id="experience" aria-label="experience">
+
+          <!-- disabled class="child" for now  -->
           <h1 class="skills-title"> Technical Skills </h1>
             <hr/>
           <div class="skills-container">
@@ -183,186 +189,228 @@
         </section>
 
         <section id="projects" aria-label="projects">
+          <!-- disabled class="child" for now  -->
           <h1> Projects </h1>
             <hr />
-           <!-- Project 1 -->
-           <ul 
-            class="cards"
-           >
-            <li class="cards-item">
-              <div class="project-card">
-
-                <div class="card-content">
-                  <div class="card-title">
-                    Fitpad
-                  </div>
-                  <img class="project-photo" src="portfolio-images/fitpad.png" alt="project photo">
-                  <p class="card-text">
-                    I developed, tested and designed this Full-Stack application to allow users to effortlessly keep track of their weight lifting sessions. This application was built for a user who would like to keep track of their exercise data. The technologies used to build this application include React, JSON, Node, PostgreSQL, Express, and CSS.
-                  </p>
-                  <div class="btn-container">
-                    
-                      <a class="project-btn" href="https://fitpad.now.sh/" target="_blank"> 
-                        Live Demo 
-                      </a>
+           
+          <!--Tabs UL-->
+           <ul class="tabs">
+            <li data-tab-target="#react" class="active tab"> React </li>
+            <li data-tab-target="#jquery" class="tab"> jQuery </li>
+            <li data-tab-target="#java" class="tab"> Java </li>
+            <li data-tab-target="#wordpress" class="tab"> WordPress </li>
+          </ul>
+          <!-- Project 1 -->
+          <div class="tab-content">
+            <div id="react" data-tab-content class="active">
               
-                      <a class="project-btn" href="https://gist.github.com/aliceaa396/8635a80457835309a1827c9fe8e9d46e#file-capstone-i-fitpad" target="_blank"> 
-                        GitHub 
-                      </a>
+              <section id="projects" aria-label="projects">
+                
+                 <!-- Project 1 -->
+                 <ul 
+                  class="cards"
+                 >
+                  <li class="cards-item">
+                    <div class="project-card">
+      
+                      <div class="card-content">
+                        <div class="card-title">
+                          Fitpad
+                        </div>
+                        <img class="project-photo" src="portfolio-images/fitpad.png" alt="project photo">
+                        <p class="card-text">
+                          I developed, tested and designed this Full-Stack application to allow users to effortlessly keep track of their weight lifting sessions. This application was built for a user who would like to keep track of their exercise data. The technologies used to build this application include React, JSON, Node, PostgreSQL, Express, and CSS.
+                        </p>
+                        <div class="btn-container">
+                          
+                            <a class="project-btn" href="https://fitpad.now.sh/" target="_blank"> 
+                              Live Demo 
+                            </a>
                     
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <!-- Project 2 -->
-          <ul 
-            class="cards"
-          >
-            <li class="cards-item">
-              <div class="project-card">
-                <div class="card-image spaced-reps"></div>
-                <div class="card-content">
-                  <div class="card-title">
-                    Spanish Spaced Repitition
-                  </div>
-                  <img class="project-photo" src="portfolio-images/spanishspaced.PNG" alt="project photo">
-                  <p class="card-text">
-                    I designed and developed this Full-Stack application that utilizes spaced repetition to teach users a few words in a different language. This application was built for a user who would like to improve their grasp on some Spanish words. The technologies used to build this application include React, CSS, Node, as well as PostgreSQL.
-                  </p>
-                  <div class="btn-container">
-                      <a class="project-btn" href="https://spaced-repetition-ten.now.sh/" target="_blank"> 
-                        Live Demo 
-                      </a>
-            
-                      <a class="project-btn" href="https://github.com/thinkful-ei-iguana/Jack-Angel-Capstone-II-Frontend" target="_blank">
-                        GitHub 
-                      </a>
-                  </div>
+                            <a class="project-btn" href="https://gist.github.com/aliceaa396/8635a80457835309a1827c9fe8e9d46e#file-capstone-i-fitpad" target="_blank"> 
+                              GitHub 
+                            </a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+      
+                <!-- Project 2 -->
+                <ul 
+                  class="cards"
+                >
+                  <li class="cards-item">
+                    <div class="project-card">
+                      <div class="card-image spaced-reps"></div>
+                      <div class="card-content">
+                        <div class="card-title">
+                          Spanish Spaced Repitition
+                        </div>
+                        <img class="project-photo" src="portfolio-images/spanishspaced.PNG" alt="project photo">
+                        <p class="card-text">
+                          I designed and developed this Full-Stack application that utilizes spaced repetition to teach users a few words in a different language. This application was built for a user who would like to improve their grasp on some Spanish words. The technologies used to build this application include React, CSS, Node, as well as PostgreSQL.
+                        </p>
+                        <div class="btn-container">
+                            <a class="project-btn" href="https://spaced-repetition-ten.now.sh/" target="_blank"> 
+                              Live Demo 
+                            </a>
                   
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <!-- Project 3 -->
-          <ul 
-            class="cards"
-          >
-            <li class="cards-item">
-              <div class="project-card">
-                <div class="card-image frenmo"></div>
-                <div class="card-content">
-                  <div class="card-title">
-                    React MDL Portfolio
-                  </div>
-                  <img class="project-photo" src="portfolio-images/React-MDL.PNG" alt="project photo">
-                  <p class="card-text">
-                    Designed and developed an alternative version of my portfolio using React Material Design Lite and CSS. This project allowed me to get more familiar with the popular tool kit.
-                  </p>
-                  <div class="btn-container">
-                      <a class="project-btn" href="https://angelaliceasportfolio.now.sh/" target="_blank">
-                        Live Demo 
-                      </a>
-             
-                      <a class="project-btn" href="https://github.com/aliceaa396/React-Portfolio" target="_blank">
-                        GitHub 
-                      </a>
-                  </div>      
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <!-- Project 4 -->
-          <ul 
-            class="cards"
-          >
-            <li class="cards-item">
-              <div class="project-card">
-                <div class="card-image frenmo"></div>
-                <div class="card-content">
-                  <div class="card-title">
-                    Frenmo
-                  </div>
-                  <img class="project-photo" src="portfolio-images/frenmo.PNG" alt="project photo">
-                  <p class="card-text">
-                    I acted as the project manager on a team of five developers led by one senior developer. I contributed to the development of the front-end of this Full-Stack application. We built this application to allow users to send virtual coupons to friends and family. The technologies used to build this application include React, SaSS, Node, as well as PostgreSQL.
-                  </p>
-                  <div class="btn-container">
-                    <a class="project-btn" href="https://frenmo.now.sh/login" target="_blank">
-                      Live Demo 
-                    </a>
-                      
-                    <a class="project-btn" href="https://gist.github.com/aliceaa396/9bc42fbfbb49f381e0314b9e0a8df4fe" target="_blank">
-                      GitHub 
-                    </a>
-                  </div>      
-                </div>
-              </div>
-            </li>
-          </ul>
-          
-          <!-- Project 5 -->
-          <ul 
-            class="cards"
-          >
-            <li class="cards-item">
-              <div class="project-card">
-                <div class="card-image sharkmarks"></div>
-                <div class="card-content">
-                  <div class="card-title">
-                    Sharkmarks
-                  </div>
-                  <img class="project-photo" src="portfolio-images/sharkmarksSS.PNG" alt="project photo">
-                  <p class="card-text">
-                    Designed and developed a bookmarking application that keeps track of a users favorite websites. The technologies used to build this application include jQuery, HTML, CSS, REST API.
-                  </p>
-                  <div class="btn-container">
-                     
-                    <a class="project-btn" href="https://thinkful-ei-iguana.github.io/Angel_Bookmarks_App/" target="_blank"> 
-                      Live Demo
-                    </a>
-
-                    <a class="project-btn" href="https://github.com/thinkful-ei-iguana/Angel_Bookmarks_App" target="_blank">
-                      GitHub
-                    </a>
-                  </div>       
-                </div>
-              </div>
-            </li>
-          </ul>
-
-          <!-- Project 6 -->
-          <ul 
-            class="cards"
-          >
-            <li class="cards-item">
-              <div class="project-card">
-                <div class="card-image matrix"></div>
-                <div class="card-content">
-                  <div class="card-title">
-                    Matrix Quiz
-                  </div>
-                  <img class="project-photo" src="portfolio-images/matrixquizSS.PNG" alt="project photo">
-                  <p class="card-text">
-                    Built a quiz application to test a user’s knowledge of the Matrix Films. The technologies used to build this application include jQuery, HTML, CSS, REST API.
-                  </p>
-                  <div class="btn-container">
-                    <a class="project-btn" href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/" target="_blank"> 
-                      Live Demo
-                    </a>
-                  
-                    <a class="project-btn" href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App" target="_blank"> 
-                      GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
+                            <a class="project-btn" href="https://github.com/thinkful-ei-iguana/Jack-Angel-Capstone-II-Frontend" target="_blank">
+                              GitHub 
+                            </a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+      
+                <!-- Project 3 -->
+                <ul 
+                  class="cards"
+                >
+                  <li class="cards-item">
+                    <div class="project-card">
+                      <div class="card-image frenmo"></div>
+                      <div class="card-content">
+                        <div class="card-title">
+                          React MDL Portfolio
+                        </div>
+                        <img class="project-photo" src="portfolio-images/React-MDL.PNG" alt="project photo">
+                        <p class="card-text">
+                          Designed and developed an alternative version of my portfolio using React Material Design Lite and CSS. This project allowed me to get more familiar with the popular tool kit.
+                        </p>
+                        <div class="btn-container">
+                            <a class="project-btn" href="https://angelaliceasportfolio.now.sh/" target="_blank">
+                              Live Demo 
+                            </a>
+                   
+                            <a class="project-btn" href="https://github.com/aliceaa396/React-Portfolio" target="_blank">
+                              GitHub 
+                            </a>
+                        </div>      
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+      
+                <!-- Project 4 -->
+                <ul 
+                  class="cards"
+                >
+                  <li class="cards-item">
+                    <div class="project-card">
+                      <div class="card-image frenmo"></div>
+                      <div class="card-content">
+                        <div class="card-title">
+                          Frenmo
+                        </div>
+                        <img class="project-photo" src="portfolio-images/frenmo.PNG" alt="project photo">
+                        <p class="card-text">
+                          I acted as the project manager on a team of five developers led by one senior developer. I contributed to the development of the front-end of this Full-Stack application. We built this application to allow users to send virtual coupons to friends and family. The technologies used to build this application include React, SaSS, Node, as well as PostgreSQL.
+                        </p>
+                        <div class="btn-container">
+                          <a class="project-btn" href="https://frenmo.now.sh/login" target="_blank">
+                            Live Demo 
+                          </a>
+                            
+                          <a class="project-btn" href="https://gist.github.com/aliceaa396/9bc42fbfbb49f381e0314b9e0a8df4fe" target="_blank">
+                            GitHub 
+                          </a>
+                        </div>      
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </div>
+      
+            <!-- jquery Tabs -->
+            <div id="jquery" data-tab-content>
+              <section id="projects">
+                <!-- Project 6 -->
+                <ul 
+                  class="cards"
+                >
+                  <li class="cards-item">
+                    <div class="project-card">
+                      <div class="card-image matrix"></div>
+                      <div class="card-content">
+                        <div class="card-title">
+                          Matrix Quiz
+                        </div>
+                        <img class="project-photo" src="portfolio-images/matrixquizSS.PNG" alt="project photo">
+                        <p class="card-text">
+                          Built a quiz application to test a user’s knowledge of the Matrix Films. The technologies used to build this application include jQuery, HTML, CSS, REST API.
+                        </p>
+                        <div class="btn-container">
+                          <a class="project-btn" href="https://thinkful-ei-iguana.github.io/Mason_Angel_Quiz_App/" target="_blank"> 
+                            Live Demo
+                          </a>
+                        
+                          <a class="project-btn" href="https://github.com/thinkful-ei-iguana/Mason_Angel_Quiz_App" target="_blank"> 
+                            GitHub
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+      
+                  <!-- Project 5 -->
+                  <ul 
+                  class="cards"
+                >
+                  <li class="cards-item">
+                    <div class="project-card">
+                      <div class="card-image sharkmarks"></div>
+                      <div class="card-content">
+                        <div class="card-title">
+                          Sharkmarks
+                        </div>
+                        <img class="project-photo" src="portfolio-images/sharkmarksSS.PNG" alt="project photo">
+                        <p class="card-text">
+                          Designed and developed a bookmarking application that keeps track of a users favorite websites. The technologies used to build this application include jQuery, HTML, CSS, REST API.
+                        </p>
+                        <div class="btn-container">
+                           
+                          <a class="project-btn" href="https://thinkful-ei-iguana.github.io/Angel_Bookmarks_App/" target="_blank"> 
+                            Live Demo
+                          </a>
+      
+                          <a class="project-btn" href="https://github.com/thinkful-ei-iguana/Angel_Bookmarks_App" target="_blank">
+                            GitHub
+                          </a>
+                        </div>       
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+      
+      
+      
+            </div>
+      
+      
+            <div id="java" data-tab-content>
+              <section id="projects">
+                <h1> Java </h1>
+                <p> Contact info lives here </p>
+              </section>
+            </div>
+      
+            <!-- WordPress Projects -->
+            <div id="wordpress" data-tab-content>
+              <section id="projects">
+                <h1> WordPress </h1>
+                <p> Contact info lives here </p>
+              </section>
+            </div>
         </section>
+      </div>
     </main>
 
     <footer id="footer" aria-label="footer-menu">

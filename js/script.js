@@ -22,27 +22,12 @@ VANTA.TOPOLOGY({
   scale: 1.00,
   scaleMobile: 1.00,
   color: 0x910da2,
-  backgroundColor: 0x51414
+  backgroundColor: 0x51414,
+  
 });
 
 
-VANTA.NET({
-  el: "#exp",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  points: 8.00,
-  maxDistance: 30.00,
-  spacing: 16.00,
-  color: 0x910da2,
-  backgroundColor: 0x51414
-})
-
-VANTA.WAVES({
+VANTA.TOPOLOGY({
   el: "#footer",
   mouseControls: true,
   touchControls: true,
@@ -51,9 +36,28 @@ VANTA.WAVES({
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  color: 0x250e2d
-})
+  color: 0x910da2,
+  backgroundColor: 0x51414,
+  
+});
 
+/* Code for Tabs */
+const tabs = document.querySelectorAll("[data-tab-target]");
+const tabContents = document.querySelectorAll("[data-tab-content]");
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.tabTarget);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("active");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tab.classList.add("active");
+    target.classList.add("active");
+  });
+});
 
 /* code highlight */
 $(document).ready(function(){

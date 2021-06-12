@@ -197,8 +197,8 @@ a.nav-link:hover {
 }
 
 .btn {
-  background-color: white;
-  color: black;
+  background-color: #fa4299;
+  color: #ffffff;
   border-radius: 5px;
   display: inline-block;
   margin-top: 2rem;
@@ -254,64 +254,258 @@ blockquote:before {
   text-indent: 2em;
 }
 
+
 /* Skills Section  */
-section #experience {
+
+ section #experience {
   background-size: cover;
   justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #fa4299;
+}
+
+#experience {
+  background-color: #fa4299;  
+}
+
+.inner {
+  padding: 20px;
 }
 
 .skills-title {
   font-family: 'Lato', sans-serif;
-  color: black;
+  color: #ffffff;
 }
 
-.card h4.title-dev-tools {
-  font-family: 'Lato', sans-serif;
-  
+.skills-header {
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.skills-header ::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #7b0099;
+  border-radius: 2px;
 }
 
 .skills-container {
-  margin: 0 auto;
-  width: 100%;
-  display: table;
-  border-spacing: 10px;
-  overflow: hidden;
-}
-div.card {
-  border-radius: 5px;
-  background: linear-gradient(135deg, #eb648c 0%, #ce587b 100%);
-  margin-top: 20%;
-  display: table-cell;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
 }
 
-.card h4 {
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.skill-box {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.skill-box:hover > .skill-title::after,
+.skill-box:hover > .skill-title::before {
+  transition: 0.5s;
+  width: 35px;
+}
+
+.skill-box:hover .img {
+  transform: translateY(-10px);
+}
+
+.skill-box h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  display: inline;
   padding: 10px;
-  word-wrap: break-word;
-  font-family: 'Lato', sans-serif;
-}
-.desc {
-  text-align: center;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  color: #ffffff;
+  font-weight: lighter;
 }
 
-.desc p {
-  margin: 0;
-  line-height: 1.5;
-  flex: 1 1 auto;
+.jsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+#js {
+  padding-bottom: 0;
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 75px;
+}
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  text-shadow: 2px 2px 12px black;
+}
+
+.skill-title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 0 2px 2px 0;
+  background-color: #7b0099;
+  transition: 0.5s;
+}
+
+.skill-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 4px;
+  border-radius: 2px 0 0 2px;
+  background-color: #7b0099;
+  transition: 0.5s;
+}
+
+.img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  transition: 0.5s;
+  box-shadow: 2px 2px 12px black;
+
+}
+
+.img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+  border-radius: 45px 0 0 45px;
+  transition: 0.5s;
+}
+.jsSkill {
+  width: 45px;
   padding: 5px;
 }
 
-.desc-short p {
-  margin: 15px;
-  line-height: 1.5;
-  flex: 1 1 auto;
-  padding: 5px;
+.skill-icon {
+  width: 50px;
+  z-index: 2;
+}
+
+.skill-title h3 {
+  font-family: "Lato", sans-serif;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+
+
+/* Skills Swatch Section */
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  box-sizing: border-box;
+}
+
+.swatchCard {
+  margin: 5px;
+}
+
+.wrapper .swatchCard {
+  width: calc(33% - 20px);
+  background: #ffffff;
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  box-shadow: 2px 2px 12px black;
+}
+
+.wrapper .swatchCard .swatchCircle {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  cursor: default;
+}
+
+.swatchCard .swatchCircle .box,
+.swatchCard .swatchCircle .box span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.swatchCard .swatchCircle .box span,
+.wrapper .swatchCard .text {
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swatchCard .swatchCircle .box {
+  height: 100%;
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.swatchCard .swatchCircle:hover .box {
+  transform: translate(-50%, -50%) scale(0.91);
+}
+
+.swatchCircle .box span {
+  font-size: 25px;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+
+.swatchCard .text {
+  font-size: 20px;
+  font-weight: 600;
   text-align: center;
 }
+
+
+
+
+
+
 
 /* Projects Section Styles */
 section#projects h1 {
@@ -344,10 +538,12 @@ section #projects {
 .tab {
   cursor: pointer;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .tab.active {
   background-color: #ccc;
+  
 }
 
 .tab:hover {
@@ -443,7 +639,6 @@ div.project-card {
 
 a.project-btn {
   color: black;
-  border-radius: 5px;
   background-color: transparent;
   max-width: 200px;
   display: flex;
@@ -454,12 +649,16 @@ a.project-btn {
   padding: 15px;
   font-size: 20px;
   outline: 0;
+  border-bottom: 1px solid #a445b2;
+  margin-bottom: 0px;
+  cursor: pointer;
 }
 
 a.project-btn:hover {
-  background-color: black;
+  background-color: #fa4299;
   border:1px solid white;
   color: white;
+  border-radius: 5px;
 }
 
 a.project-btn {
@@ -489,7 +688,24 @@ img.footer-logo {
   padding: 8px;
 }
 
-/* Media Query Stuff */
+/* Media Queries */
+
+@media screen and (max-width: 990px) {
+  /* Skills Section */
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 50px;
+  }
+  #js {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 @media screen and (min-width: 700px) {
   /* Styles to expand Nav Menu on larger screens */
@@ -640,5 +856,23 @@ img.footer-logo {
   h3.contact-me-footer {
     font-size: 18px;
     font-family: "Nunito", sans-serif;
+  }
+}
+@media (max-width: 753 px) {
+  .wrapper {
+    max-width: 700px;
+  }
+  .wrapper .swatchCard {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 505px) {
+  .wrapper {
+    max-width: 500px;
+  }
+  .wrapper .swatchCard {
+    width: 100%;
   }
 }

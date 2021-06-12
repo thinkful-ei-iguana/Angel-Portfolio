@@ -31,6 +31,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
 </head>
 
 <body>
@@ -133,61 +136,143 @@
           <!-- disabled class="child" for now  -->
           <h1 class="skills-title"> Technical Skills </h1>
             <hr/>
-          <div class="skills-container">
-            
-            <div class ="card">
-              <h4 
-                class="title"
-              > 
-                Front-End
-              </h4>
-                <div class="desc-short" >
-                    <p> JavaScript </p>
-                    <p> React </p> 
-                    <p> Redux </p>
-                    <p> HTML </p>
-                    <p> CSS </p>
-                    <p> jQuery </p> 
-                </div>
-            </div>
-  
-            <div class ="card">
-              <h4 
-                class="title"
-              > 
-                Back-End 
-              </h4>
-                <div class="desc-short">
-                  <p> Node </p> 
-                  <p> Express </p> 
-                  <p> PostgreSQL </p> 
-                  <p> JSON </p> 
-                  <p> RESTFUL API </p> 
-                  <p> Ruby </p>
-                </div>
-            </div>
 
-            <div class ="card"> 
-              <h4 
-                class="title-dev-tools"
-              >
-                Dev. Tools </br> & Methods 
-              </h4>
-                <div class="desc">
-                  <p> Mobile Development </p>
-                  <p> Responsive Design </p>
-                  <p> Git & GitHub </p>
-                  <p> Chrome Dev. Tools </p>
-                  <p> DBeaver </p>
-                  <p> Postman </p>
-                  <p> React MDL </p> 
-                  <p> Heroku & Zeit </p>
-                  <p> WordPress </p>
+            <div class="skills-container">
+              <!-- Front End -->
+                <div class="skill-box">
+                  <div class="skill-title"> 
+                    <div class="img">
+                        <img src="https://img.icons8.com/dusk/50/000000/html-5.png" class="skill-icon"/>            
+                    </div>
+                    <h3> HTML 5 </h3>
+                  </div>
                 </div>
+        
+                <div class="skill-box">
+                  <div class="skill-title"> 
+                    <div class="img">
+                      <img src="https://img.icons8.com/dusk/50/000000/css3.png" class="skill-icon"/>
+                    </div>
+                      <h3> CSS 3 </h3>
+                  </div>
+                </div>
+        
+        
+                <div class="skill-box">
+                  <div class="skill-title" id="js"> 
+                    <div class="img">
+                      <img src="https://img.icons8.com/dusk/50/000000/javascript-logo.png"class="skill-icon"/>
+                    </div>
+                       <h3> JavaScript </h3>
+                       
+                  </div>
+                    <div class="jsContainer">
+        
+                      <img src="https://img.icons8.com/ios-glyphs/60/000000/react.png"class="jsSkill"/>
+                        
+                      <img src="https://img.icons8.com/ios-filled/50/000000/jquery.png"class="jsSkill"/>
+                        
+                      <img src="https://img.icons8.com/material-sharp/50/000000/redux.png"class="jsSkill"/>
+                    </div>
+                    
+                      <div class="lang-container"> 
+                        <h4> React </h4>
+                        <h4> jQuery </h4>
+                        <h4> Redux </h4>
+                      </div> 
+                      
+                </div>
+        
+        
+        <!-- Back End -->
+            <div class="skill-box">
+              <div class="skill-title"> 
+                <div class="img">
+                  <img src="https://img.icons8.com/ios-filled/50/000000/java-coffee-cup-logo--v1.png"class="skill-icon"/>
+                </div>
+                  <h3> Java </h3>
+              </div>
+            </div>
+        
+            <div class="skill-box">
+              <div class="skill-title"> 
+                <div class="img">
+                  <img src="https://img.icons8.com/windows/50/000000/nodejs.png"class="skill-icon"/>
+                </div>
+                  <h3> Node </h3>
+              </div>
+            </div>
+        
+        
+            <div class="skill-box">
+              <div class="skill-title"> 
+                <div class="img">
+                  <img src="https://img.icons8.com/ios-filled/50/000000/postgreesql.png"class="skill-icon"/>
+                </div>
+                  <h3> PostgreSQL </h3>
+              </div>
             </div>
           </div>
+
+          <!-- skills swatch section  -->
+          <div class="wrapper">
+            <div class="swatchCard respDes">
+              <div class="swatchCircle">
+                <div class="bar"></div>
+                <div class="box"><span> 95% </span></div>
+              </div>
+              <div class="text">Responsive Design</div>
+            </div>
+      
+            <div class="swatchCard git">
+              <div class="swatchCircle">
+                <div class="bar"></div>
+                <div class="box"><span> 95% </span></div>
+              </div>
+              <div class="text">Git/GitHub</div>
+            </div>
+      
+            <div class="swatchCard herZei">
+              <div class="swatchCircle">
+                <div class="bar"></div>
+                <div class="box"><span> 95% </span></div>
+              </div>
+              <div class="text">Heroku & Zeit</div>
+            </div>
+          </div>
+      
+          <script>
+            let options = {
+              startAngle: -1.55,
+              size: 150,
+              value: 0.85,
+              fill: {
+                gradient: ["#a445b2", "#fa4299"]
+              }
+            };
+            $(".swatchCircle .bar")
+              .circleProgress(options)
+              .on("circle-animation-progress", function (event, progress, stepValue) {
+                $(this)
+                  .parent()
+                  .find("span")
+                  .text(String(stepValue.toFixed(2).substr(2)) + "%");
+              });
+            $(".git .bar").circleProgress({
+              value: 0.9
+            });
+            $(".respDes .bar").circleProgress({
+              value: 0.95
+            });
+            $(".herZei .bar").circleProgress({
+              value: 0.85
+            });
+          </script>
         </section>
 
+
+
+<!-- Projects section -->
         <section id="projects" aria-label="projects">
           <!-- disabled class="child" for now  -->
           <h1> Projects </h1>
@@ -197,8 +282,7 @@
            <ul class="tabs">
             <li data-tab-target="#react" class="active tab"> React </li>
             <li data-tab-target="#jquery" class="tab"> jQuery </li>
-            <li data-tab-target="#java" class="tab"> Java </li>
-            <li data-tab-target="#wordpress" class="tab"> WordPress </li>
+            <!-- <li data-tab-target="#java" class="tab"> Java </li> -->
           </ul>
           <!-- Project 1 -->
           <div class="tab-content">
@@ -389,9 +473,6 @@
                   </li>
                 </ul>
               </section>
-      
-      
-      
             </div>
       
       
